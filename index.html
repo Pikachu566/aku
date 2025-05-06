@@ -20,7 +20,7 @@
         background-color: transparent;
     }
 	
-	    header h1 {
+	header h1 {
         margin: 0;
         font-size: 3.5em;
         color: #fff;
@@ -65,42 +65,6 @@
         margin-bottom: 25px;
         color: #ff9999;
     }
-
-    /* Tambahan untuk audio player */
-#audioBar {
-    background-color: #1a1a1a;
-    padding: 10px;
-    text-align: center;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
-}
-
-#audioBar button {
-    background-color: #292929;
-    color: #fff;
-    border: none;
-    padding: 10px 14px;
-    margin: 0 6px;
-    font-size: 20px;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    transition: background 0.3s, transform 0.2s;
-}
-
-#audioBar button:hover {
-    background-color: #444;
-    transform: scale(1.1);
-}
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #3e0e12;
-    color: #f8d6d6;
-    font-size: 0.9em;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-}
 </style>
 </head>
 <body>
@@ -126,25 +90,5 @@ Kalau hangpa jumpa website ni, jangan fikir aku ni hebat. Website ni cuma benda 
         </p>
     </div>
 </div>
-<script>
-
-        function playAudio() {
-            document.getElementById("audioNotification").play();
-        }
-
-        function pauseAudio() {
-            document.getElementById("audioNotification").pause();
-        }
-		const audio = document.getElementById("audioNotification");
-</script>
-<footer>
-<div id="audioBar">
-    <audio id="audioNotification">
-        <source src="sound.mp4" type="audio/mpeg">
-    </audio>
-    <button onclick="playAudio()" title="Play sound">Play sound▶</button>
-    <button onclick="pauseAudio()" title="Pause sound">Pause sound⏸️</button>
-</div>
-</footer>
 </body>
 </html>
