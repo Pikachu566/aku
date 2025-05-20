@@ -36,12 +36,23 @@
         margin-top: 20px;
     }
 
+.image-container img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    display: block;
+    margin: 0 auto;
+}
+
+/* Responsive untuk skrin kecik */
+@media (max-width: 600px) {
     .image-container img {
-        max-width: 70%;
-        height: auto;
-        border-radius: 15px;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        max-width: 200px;
     }
+}
+
 
     .container {
         width: 90%;
